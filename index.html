@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CourseHub-платформа IT курсів</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Перейти до вмісту</a>
+
+  <header class="header">
+    <section class="logo">
+      <img src="img/logo.png" alt="Логотип CourseHub" width="78" height="63">
+      <span>CourseHub</span>
+    </section>
+
+    <input class="nav-toggle" type="checkbox" id="nav-toggle">
+
+    <label class="burger" for="nav-toggle" aria-label="Відкрити меню">
+      <span></span>
+    </label>
+
+    <div class="nav-wrap">
+      <nav class="nav">
+        <a class="nav__link" href="#courses">Курси</a>
+        <a class="nav__link" href="#pricing">Тарифи</a>
+        <a class="nav__link" href="#how">Як це працює</a>
+        <a class="nav__link" href="#teachers">Викладачі</a>
+      </nav>
+
+      <a class="btn btn--dark" href="#cabinet">Мій профіль</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <article class="hero-content">
+        <h1>Нові навички без відриву від життя</h1>
+
+        <p>CourseHub — платформа коротких практичних курсів від фахівців,
+           які самі працюють у професії. Вчіться у зручному темпі й
+           застосовуйте знання вже на другому тижні.</p>
+
+        <div class="hero-buttons">
+          <a class="btn btn--primary" href="#courses">Обрати курс</a>
+          <a class="btn btn--ghost-light" href="#how">Як це працює</a>
+        </div>
+
+        <ul class="stats">
+          <li class="stat">
+            <strong>12 тис</strong>
+            <span>студентів навчаються зараз</span>
+          </li>
+          <li class="stat">
+            <strong>94%</strong>
+            <span>рекомендують нас друзям</span>
+          </li>
+          <li class="stat">
+            <strong>38</strong>
+            <span>практичних курсів у каталозі</span>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="steps">
+      <h2>Створено для того, щоб ви дійшли до фіналу,<br>а не кинули на пів дорозі</h2>
+      <p class="steps-subtitle">Не онлайн-бібліотека сухих відео, а супровід від першого уроку до фінального проєкту</p>
+
+      <ul class="steps-list">
+        <li class="step">
+          <span class="step-number">1</span>
+          <h3>Навчання через практику</h3>
+          <p>Ви створюєте реальний продукт — застосунок, сайт чи маркетингову стратегію. Жодної «сухої» теорії: лише ті знання, які потрібні для виконання наступного практичного кроку</p>
+        </li>
+        <li class="step">
+          <span class="step-number">2</span>
+          <h3>Особистий фідбек</h3>
+          <p>Домашні завдання перевіряє куратор курсу, а не автоматичний тест. Відповідь на запитання приходить упродовж доби.</p>
+        </li>
+        <li class="step">
+          <span class="step-number">3</span>
+          <h3>Повна гнучкість</h3>
+          <p>Доступ до матеріалів залишається з вами назавжди. Проходьте програму інтенсивно за місяць або розтягуйте у власному темпі без штрафів і дедлайнів.</p>
+        </li>
+        <li class="step">
+          <span class="step-number">4</span>
+          <h3>Портфоліо замість диплома</h3>
+          <p>Замість сертифікатів ви виходите з 3–5 готовими кейсами. Наші партнери враховують фінальні проєкти випускників при підборі джуніорів.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="courses" id="courses">
+      <h2 class="courses-title">Обирай свій напрямок та старт у кар'єрі</h2>
+
+      <ul class="courses-grid">
+        <li class="card course-card">
+          <img src="img/course-web.jpg" alt="Ноутбук на робочому столі" width="760" height="280" loading="lazy" decoding="async">
+          <article class="course-body">
+            <span class="course-tag">Веброзробка</span>
+            <h3>Веброзробка з нуля</h3>
+            <p class="course-meta">12 тижнів · початковий рівень</p>
+            <p class="course-desc">Від HTML до першого комерційного проєкту на React. Останній модуль — стажування у партнерській студії.</p>
+            <footer class="course-footer">
+              <a class="btn btn--dark" href="#request" aria-label="Записатися на курс: Веброзробка з нуля">Записатися на курс</a>
+              <span class="course-price">6 900 ₴</span>
+            </footer>
+          </article>
+        </li>
+
+        <li class="card course-card">
+          <img src="img/course_python.jpg" alt="Код на Python на екрані монітора" width="760" height="280" loading="lazy" decoding="async">
+          <article class="course-body">
+            <span class="course-tag">Програмування</span>
+            <h3>Python для початківців</h3>
+            <p class="course-meta">10 тижнів · початковий рівень</p>
+            <p class="course-desc">Вивчіть основи синтаксису, задач та написання перших скриптів. Опануйте роботу з базовими бібліотеками</p>
+            <footer class="course-footer">
+              <a class="btn btn--dark" href="#request" aria-label="Записатися на курс: Python для початківців">Записатися на курс</a>
+              <span class="course-price">7 200 ₴</span>
+            </footer>
+          </article>
+        </li>
+
+        <li class="card course-card">
+          <img src="img/course-figma.jpg" alt="Макет мобільного застосунку" width="760" height="280" loading="lazy" decoding="async">
+          <article class="course-body">
+            <span class="course-tag">Дизайн</span>
+            <h3>UI/UX Design у Figma</h3>
+            <p class="course-meta">8 тижнів · початковий рівень</p>
+            <p class="course-desc">Проєктування мобільних застосунків та сайтів. Створення анімацій та повноцінного дипломного кейсу для Figma.</p>
+            <footer class="course-footer">
+              <a class="btn btn--dark" href="#request" aria-label="Записатися на курс: UI/UX Design у Figma">Записатися на курс</a>
+              <span class="course-price">8 500 ₴</span>
+            </footer>
+          </article>
+        </li>
+
+        <li class="card course-card">
+          <img src="img/course-data.jpg" alt="Дашборд з графіками на екрані ноутбука" width="760" height="280" loading="lazy" decoding="async">
+          <article class="course-body">
+            <span class="course-tag">Аналітика</span>
+            <h3>Data Analytics/Power BI</h3>
+            <p class="course-meta">14 тижнів · середній рівень</p>
+            <p class="course-desc">Навчіться збирати дані, будувати інтерактивні дашборди та проводити бізнес-аналіз для прийняття стратегічних рішень.</p>
+            <footer class="course-footer">
+              <a class="btn btn--dark" href="#request" aria-label="Записатися на курс: Data Analytics/Power BI">Записатися на курс</a>
+              <span class="course-price">9 400 ₴</span>
+            </footer>
+          </article>
+        </li>
+
+        <li class="card course-card">
+          <img src="img/course_marketing.jpg" alt="Блокнот і ноутбук для роботи з контентом" width="760" height="280" loading="lazy" decoding="async">
+          <article class="course-body">
+            <span class="course-tag">Маркетинг</span>
+            <h3>Content Marketing</h3>
+            <p class="course-meta">6 тижнів · початковий рівень</p>
+            <p class="course-desc">Створення текстів, що продають: від постів для соцмереж до статей для блогів та текстів для посадкових сторінок</p>
+            <footer class="course-footer">
+              <a class="btn btn--dark" href="#request" aria-label="Записатися на курс: Content Marketing">Записатися на курс</a>
+              <span class="course-price">5 500 ₴</span>
+            </footer>
+          </article>
+        </li>
+
+        <li class="card course-card">
+          <img src="img/course-pm.jpg" alt="Команда обговорює задачі біля дошки зі стікерами" width="760" height="280" loading="lazy" decoding="async">
+          <article class="course-body">
+            <span class="course-tag">Менеджмент</span>
+            <h3>IT Project Management</h3>
+            <p class="course-meta">10 тижнів · середній рівень</p>
+            <p class="course-desc">Управління командами розробки за методологіями Agile Планування бюджетування та комунікація з замовниками</p>
+            <footer class="course-footer">
+              <a class="btn btn--dark" href="#request" aria-label="Записатися на курс: IT Project Management">Записатися на курс</a>
+              <span class="course-price">8 900 ₴</span>
+            </footer>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="audience">
+      <h2>Кому підійдуть наші курси?</h2>
+
+      <ul class="audience-list">
+        <li class="audience-item">
+          <span class="audience-label">Світчерам</span>
+          <h3>Змінюєте професію</h3>
+          <p>Тим, хто хоче почати з нуля та впевнено зайти в IT чи цифрові сфери без втрати доходу.</p>
+        </li>
+        <li class="audience-item">
+          <span class="audience-label">Студентам</span>
+          <h3>Навчаєтесь в університеті</h3>
+          <p>Щоб здобути реальні практичні навички паралельно з навчанням — і прийти на перше стажування вже з портфоліо</p>
+        </li>
+        <li class="audience-item">
+          <span class="audience-label">Діючим спеціалістам</span>
+          <h3>Ви вже працюєте за фахом</h3>
+          <p>Щоб структурувати знання, заповнити прогалини та підняти чек</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="how" id="how">
+      <h2>Як це працює?</h2>
+      <p class="how-subtitle">Від вибору курсу до сертифіката — чотири кроки, без прихованих умов</p>
+
+      <ol class="how-list">
+        <li class="how-step">
+          <span class="how-number">1</span>
+          <span class="how-when">День 1</span>
+          <p>Дивитесь програму, обираєте напрямок і зручний формат оплати — одразу або частинами</p>
+        </li>
+        <li class="how-step">
+          <span class="how-number">2</span>
+          <span class="how-when">Тиждень 1</span>
+          <p>Отримуєте доступ до кабінету, перших уроків і чату своєї групи потоку.</p>
+        </li>
+        <li class="how-step">
+          <span class="how-number">3</span>
+          <span class="how-when">Тижні 2-11</span>
+          <p>Виконуєте завдання, куратор перевіряє їх і дає фідбек упродовж доби</p>
+        </li>
+        <li class="how-step">
+          <span class="how-number">4</span>
+          <span class="how-when">Останній тиждень</span>
+          <p>Показуєте фінальну роботу, отримуєте фідбек від ментора і сертифікат</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="teachers" id="teachers">
+      <h2>Навчайся у тих, хто вже працює в компаніях мрії</h2>
+      <p class="teachers-subtitle">Наші викладачі — це Senior та Lead спеціалісти з продуктових IT-ринку. Вони не просто викладають за підручником, а діляться реальними інсайтами з щоденної роботи, актуальними інструментами та спецификою співбесід.</p>
+
+      <ul class="teachers-list">
+        <li class="teacher">
+          <img src="img/teacher_olena.jpg" alt="Олена Мельник, Head of Design у Rozetka" width="760" height="950" loading="lazy" decoding="async">
+          <h3>Олена Мельник</h3>
+          <span class="teacher-role">Head of Design, Rozetka</span>
+          <p>Веде курс з UX/UI. За 8 років у продуктовому дизайні виростила команду з 2 до 20 людей.</p>
+        </li>
+        <li class="teacher">
+          <img src="img/teacher_dmytro.jpg" alt="Дмитро Ковальов, Senior Developer" width="760" height="950" loading="lazy" decoding="async">
+          <h3>Дмитро Ковальов</h3>
+          <span class="teacher-role">Senior Developer</span>
+          <p>Автор курсу з веброзробки. Пише код для продуктів з мільйонною аудиторією користувачів.</p>
+        </li>
+        <li class="teacher">
+          <img src="img/teacher_iryna.jpg" alt="Ірина Сидоренко, Head of Marketing у Kyivstar" width="760" height="950" loading="lazy" decoding="async">
+          <h3>Ірина Сидоренко</h3>
+          <span class="teacher-role">Head of Marketing, Kyivstar</span>
+          <p>Веде курс з SMM. Запускала рекламні кампанії з бюджетом понад 5 мільйонів гривень</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h2>Реальні історії тих, хто вже змінив свою професію</h2>
+
+      <section class="reviews-track">
+        <article class="review">
+          <span class="stars">★★★★★</span>
+          <blockquote>«До курсу я працювала в продажах і не мала жодного відношення до дизайну. Найціннішим виявився фідбек ментора — мені розбирали кожен піксель і вчили думати як продуктовий дизайнер. Зараз я працюю в IT-компанії і вже окупаю вартість навчання.»</blockquote>
+          <h3>Марія Дорошенко</h3>
+          <span class="review-role">випускниця курсу UX/UI дизайну</span>
+        </article>
+
+        <article class="review">
+          <span class="stars">★★★★★</span>
+          <blockquote>«Поєднувала навчання з основною роботою, тому гнучкий графік став для мене порятунком. Жодних жорстких дедлайнів, через які хочеться все кинути. Лекції короткі й по суті. Результат: підвищення на нинішній роботі та подвоєння доходу.»</blockquote>
+          <h3>Марина Соколова</h3>
+          <span class="review-role">випускниця курсу Digital Marketing</span>
+        </article>
+
+        <article class="review">
+          <span class="stars">★★★★★</span>
+          <blockquote>«Курсів на ринку багато, але тут вирішив поцікавитися питанням працевлаштування. Кар'єрний центр допоміг скласти резюме та провів зі мною тестову співбесіду. Мені показали, де я затинаюся. Завдяки цій підготовці я пройшов реальну інтерв'ю-сесію з першої спроби.»</blockquote>
+          <h3>Олексій Коваль</h3>
+          <span class="review-role">випускник курсу Data Analyst</span>
+        </article>
+      </section>
+    </section>
+
+    <!-- ========== БЛОК З ЦІНАМИ (модуль 6) ========== -->
+    <section class="pricing" id="pricing">
+      <h2>Обери свій варіант навчання</h2>
+
+      <ul class="pricing-grid">
+
+        <li class="card plan">
+          <h3 class="plan__name">Самостійний</h3>
+          <p class="plan__desc">Для тих, хто звик навчатися у власному темпі та вміє самостійно шукати відповіді.</p>
+          <p class="plan__price">₴8,500</p>
+          <p class="plan__monthly">або від ₴710/міс</p>
+
+          <ul class="plan__list">
+            <li>Доступ до всіх уроків курсу</li>
+            <li>Записи занять назавжди</li>
+            <li>Чат групи потоку</li>
+            <li>Автоматична перевірка тестів</li>
+          </ul>
+
+          <a class="btn btn--dark btn--block plan__btn" href="#request" aria-label="Почати навчання: тариф Самостійний">Почати навчання</a>
+        </li>
+
+        <li class="card plan plan--featured">
+          <span class="plan__badge">Найпопулярніший</span>
+          <h3 class="plan__name">З ментором</h3>
+          <p class="plan__desc">Ідеальний баланс теорії, практики та особистого супроводу для швидкого результату.</p>
+          <p class="plan__price">₴14,200</p>
+          <p class="plan__monthly">або від ₴1,180/міс</p>
+
+          <ul class="plan__list">
+            <li>Все з тарифу «Самостійний»</li>
+            <li>Перевірка домашніх завдань куратором</li>
+            <li>Сертифікат після захисту проєкту</li>
+            <li>Щотижневі онлайн сесії з експертами</li>
+          </ul>
+
+          <a class="btn btn--primary btn--block plan__btn" href="#request" aria-label="Почати навчання: тариф З ментором">Почати навчання</a>
+        </li>
+
+        <li class="card plan">
+          <h3 class="plan__name">Преміум <span>/ VIP</span></h3>
+          <p class="plan__desc">Максимальне занурення з персональним супроводом до першого офера.</p>
+          <p class="plan__price">₴24,000</p>
+          <p class="plan__monthly">або від ₴2,000/міс</p>
+
+          <ul class="plan__list">
+            <li>Все з тарифу «З ментором»</li>
+            <li>Розбір резюме й підготовка до співбесід</li>
+            <li>Рекомендація вашого резюме компаніям-партнерам</li>
+            <li>Допомога з працевлаштуванням</li>
+          </ul>
+
+          <a class="btn btn--dark btn--block plan__btn" href="#request" aria-label="Почати навчання: тариф Преміум VIP">Почати навчання</a>
+        </li>
+
+      </ul>
+
+      <p class="pricing-note">Оплата частинами від <strong>ПриватБанку</strong> та <strong>monobank</strong> — без переплат.</p>
+
+      <div class="table-wrap">
+        <table class="compare-table">
+          <caption>Порівняння можливостей тарифів CourseHub</caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Можливість</th>
+              <th scope="col">Самостійний</th>
+              <th scope="col">З ментором</th>
+              <th scope="col">Преміум / VIP</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr><th scope="row">Доступ до всіх уроків курсу</th><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><th scope="row">Записи занять назавжди</th><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><th scope="row">Чат групи потоку</th><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><th scope="row">Автоматична перевірка тестів</th><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><th scope="row">Перевірка домашніх завдань куратором</th><td>—</td><td>✓</td><td>✓</td></tr>
+            <tr><th scope="row">Сертифікат після захисту проєкту</th><td>—</td><td>✓</td><td>✓</td></tr>
+            <tr><th scope="row">Щотижневі онлайн сесії з експертами</th><td>—</td><td>✓</td><td>✓</td></tr>
+            <tr><th scope="row">Розбір резюме й підготовка до співбесід</th><td>—</td><td>—</td><td>✓</td></tr>
+            <tr><th scope="row">Допомога з працевлаштуванням</th><td>—</td><td>—</td><td>✓</td></tr>
+            <tr><th scope="row">Вартість</th><td><strong>₴8,500</strong></td><td><strong>₴14,200</strong></td><td><strong>₴24,000</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="guarantee">
+      <article class="guarantee-text">
+        <h2>Ваші інвестиції в освіту повністю захищені</h2>
+        <p>Спробуйте 7 днів безкоштовно. Якщо зрозумієте, що формат чи напрямок вам не підходить — повернемо 100% вартості без зайвих запитань.</p>
+      </article>
+
+      <ul class="guarantee-list">
+        <li>
+          <strong>7 днів</strong>
+          <span>безкоштовного доступу до перших уроків</span>
+        </li>
+        <li>
+          <strong>100%</strong>
+          <span>повернення вартості, якщо не підійде</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cabinet" id="cabinet">
+      <article class="cabinet-text">
+        <h2>Особистий кабінет</h2>
+        <p>Увійдіть, щоб бачити прогрес курсу, записи занять і фідбек куратора в одному місці</p>
+      </article>
+
+      <section class="login-form">
+
+        <input class="tab-radio" type="radio" name="auth-mode" id="tab-login" checked>
+        <input class="tab-radio" type="radio" name="auth-mode" id="tab-register">
+
+        <div class="login-tabs">
+          <label class="tab" for="tab-login">Увійти</label>
+          <label class="tab" for="tab-register">Реєстрація</label>
+        </div>
+
+        <form class="auth-form auth-login" action="#" method="post">
+          <label class="form-label" for="login-email">Email</label>
+          <input class="form-field" type="email" id="login-email" name="email"
+                 placeholder="example@email.com" autocomplete="username" required>
+
+          <label class="form-label" for="login-password">Пароль</label>
+          <input class="form-field" type="password" id="login-password" name="password"
+                 placeholder="Мінімум 8 символів" minlength="8" autocomplete="current-password" required>
+
+          <button class="btn btn--primary btn--lg btn--block" type="submit">Увійти</button>
+          <a class="forgot" href="#">Забули пароль?</a>
+        </form>
+
+        <form class="auth-form auth-register" action="#" method="post">
+          <label class="form-label" for="reg-name">Ім'я</label>
+          <input class="form-field" type="text" id="reg-name" name="name"
+                 placeholder="Олександра" autocomplete="name" required>
+
+          <label class="form-label" for="reg-email">Email</label>
+          <input class="form-field" type="email" id="reg-email" name="email"
+                 placeholder="example@email.com" autocomplete="email" required>
+
+          <label class="form-label" for="reg-password">Пароль</label>
+          <input class="form-field" type="password" id="reg-password" name="password"
+                 placeholder="Мінімум 8 символів" minlength="8" autocomplete="new-password" required>
+
+          <div class="form-check">
+            <input type="checkbox" id="reg-agree" name="agree" required>
+            <label for="reg-agree">Погоджуюсь на обробку персональних даних</label>
+          </div>
+
+          <button class="btn btn--primary btn--lg btn--block" type="submit">Зареєструватися</button>
+        </form>
+
+      </section>
+    </section>
+
+    <section class="request" id="request">
+      <h2>Безкоштовна консультація</h2>
+      <p class="request-lead">Залиште заявку — куратор передзвонить протягом робочого дня й допоможе обрати курс.</p>
+
+      <form class="request-form" action="https://formspree.io/f/ВАШ_ID" method="post">
+        <input type="hidden" name="_subject" value="Заявка з сайту CourseHub">
+        <input class="form-trap" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+
+        <div class="form-col">
+          <fieldset class="form-group">
+            <legend class="form-legend">Ваші контакти</legend>
+
+            <label class="form-label" for="req-name">Ім'я</label>
+            <input class="form-field" type="text" id="req-name" name="name"
+                   placeholder="Олександра" autocomplete="name" required>
+
+            <label class="form-label" for="req-phone">Телефон</label>
+            <input class="form-field" type="tel" id="req-phone" name="phone"
+                   placeholder="+380971234567"
+                   pattern="\+?[0-9]{10,13}"
+                   title="Введіть номер у форматі +380971234567"
+                   autocomplete="tel" required>
+
+            <label class="form-label" for="req-email">Пошта</label>
+            <input class="form-field" type="email" id="req-email" name="email"
+                   placeholder="example@email.com" autocomplete="email" required>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend class="form-legend">Що вас цікавить</legend>
+
+            <label class="form-label" for="req-course">Курс</label>
+            <select class="form-field" id="req-course" name="course">
+              <option value="">Ще не визначився</option>
+              <option value="web">Веброзробка з нуля</option>
+              <option value="python">Python для початківців</option>
+              <option value="figma">UI/UX Design у Figma</option>
+              <option value="data">Data Analytics/Power BI</option>
+              <option value="marketing">Content Marketing</option>
+              <option value="pm">IT Project Management</option>
+            </select>
+
+            <label class="form-label" for="req-date">Бажана дата дзвінка</label>
+            <input class="form-field" type="date" id="req-date" name="date">
+          </fieldset>
+        </div>
+
+        <div class="form-col">
+          <fieldset class="form-group">
+            <legend class="form-legend">Як з вами зв'язатися</legend>
+
+            <div class="form-check">
+              <input type="radio" id="req-call" name="contact" value="call" checked>
+              <label for="req-call">Подзвонити</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="req-chat" name="contact" value="chat">
+              <label for="req-chat">Написати в месенджер</label>
+            </div>
+          </fieldset>
+
+          <label class="form-label" for="req-note">Коментар</label>
+          <textarea class="form-field" id="req-note" name="note" rows="7"
+                    minlength="10" maxlength="500"></textarea>
+
+          <div class="form-check">
+            <input type="checkbox" id="req-agree" name="agree" required>
+            <label for="req-agree">Погоджуюсь на обробку персональних даних</label>
+          </div>
+
+          <button class="btn btn--primary btn--lg btn--block" type="submit">Записатися на консультацію</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="cta">
+      <video class="cta-video" autoplay muted loop playsinline
+             poster="img/bg-poster.jpg" aria-hidden="true">
+        <source src="video/bg-loop.mp4" type="video/mp4">
+      </video>
+
+      <h2>Готові зробити<br>перший крок?</h2>
+      <a class="btn btn--primary btn--lg" href="#courses">Обрати курс без ризику</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer-inner">
+      <section class="footer-brand">
+        <h3>CourseHub</h3>
+        <p>Платформа практичних курсів для нових навичок і кар'єри.</p>
+      </section>
+
+      <nav class="footer-col">
+        <h4>Платформа</h4>
+        <a href="#courses">Курси</a>
+        <a href="#how">Як це працює</a>
+        <a href="#pricing">Тарифи</a>
+      </nav>
+
+      <nav class="footer-col">
+        <h4>Компанія</h4>
+        <a href="#">Про нас</a>
+        <a href="#teachers">Викладачі</a>
+        <a href="#">Вакансії</a>
+      </nav>
+
+      <nav class="footer-col">
+        <h4>Контакти</h4>
+        <a href="mailto:CourseHub@gmail.com">CourseHub@gmail.com</a>
+        <a href="tel:+380440000000">+380 44 000 00 00</a>
+        <a href="#">Instagram</a>
+      </nav>
+    </section>
+  </footer>
+
+</body>
+</html>

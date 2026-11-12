@@ -1,0 +1,10 @@
+# Службові файли macOS
+.DS_Store
+
+# Службові файли Windows
+Thumbs.db
+desktop.ini
+
+# Налаштування редакторів
+.vscode/
+.idea/
